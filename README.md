@@ -133,20 +133,6 @@ ai-document-assistant/
 
 ---
 
-## 🐳 Docker Deployment
-
-```bash
-# Build image
-docker build -t ai-document-assistant .
-
-# Run container (requires Ollama on host)
-docker run -p 8501:8501 \
-  -e OLLAMA_BASE_URL=http://host.docker.internal:11434 \
-  ai-document-assistant
-```
-
----
-
 ## ⚙️ Configuration
 
 Copy `.env.example` to `.env` and customize:
